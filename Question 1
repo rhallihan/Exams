@@ -1,0 +1,26 @@
+#Question 1
+#Student name: Ronan Hallihan 
+
+#(A)
+taylorSwiftSongs = ["Love Story", "Blank Space", "Shake it Off", "Bad Blood", "Delicate", "You Belong With Me", "Wildest Dreams", "Red", "All too well", "22",]
+print(taylorSwiftSongs)#(B)
+songChoice = input(print("Please enter a song"))
+count = taylorSwiftSongs.count(songChoice)
+if songChoice in (taylorSwiftSongs): #(C)
+    print(songChoice,"is in the Taylor List Song list",count, "times.")
+else:
+    print("Sorry, the song",songChoice,"is not in the Taylor Swift Song list")
+
+
+
+#Question 2
+#Sudent Name: Ronan Hallihan
+
+print("Welcome to Temperature Alerts System.") # (a)
+temperature = int(input("Please enter a temperature in degrees Celcius")) # (b)
+if temperature <20:     #(c)
+    print("It is too cold. Turn the heating up")
+elif 20< temperature <40:
+    print("Temperature is just right")
+else:
+    print("It is too warm. Turn down heating")
