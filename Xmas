@@ -1,0 +1,40 @@
+#Student Name = Ronan Hallihan
+#Question 1
+#This calculator can only add or subtract #(i)
+name = input("Please enter your name:") #asks user for name #(ii)
+print("Hello",name, "\nWelcome to the addition and subtraction calculator.") #welcomes user to calculator #(iii)
+
+print('Do you want me to (a)dd or (s)ubtract?')
+choice = input()
+    
+num1 = int(input("Please enter your first number:")) #(iv)
+num2 = int(input("Please enter your second number:"))
+if choice == "a" or choice =="A": #user can input a or A if they wish to add 
+    answer1 = (num1 + num2)
+    print(num1, "+", num2, "=", answer1) #(v)
+elif choice =="s" or choice == "S": #user can input s or S if they wish to subtract #(vi)
+    answerTwo = (num1 - num2)
+    print(num1, "-", num2, "=", answerTwo)
+else:
+    print("Invalid option") #terminates calculation if correct input is not given #(vii)
+    print('Do you want me to (a)dd or (s)ubtract?') #gives user a second chance to use calculator #(viii)
+choice = input()
+num3 = int(input("Please enter your first number:")) #asks user to input their prefered numbers again
+num4 = int(input("Please enter your second number:"))
+if choice == "a" or choice =="A": 
+    answer3 = (num3 + num4)
+    print(num3, "+", num4, "=", answer3)
+elif choice =="s" or choice == "S":
+    answer4 = (num3 - num4)
+    print(num3, "-", num4, "=", answer4)
+else:
+    print("Invalid option.")
+
+#Question 2
+
+squared_numbers = [(1*1), (2*2), (3*3), (4*4), (5*5), (6*6), (7*7), (8*8), (9*9), (10*10), (11*11), (12*12), (13*13), (14*14), (15*15), (16*16), (17*17), (18*18), (19*19), (20*20)] #(i)
+print(squared_numbers) #(ii)
+number = int(input("Which number will I display (1-20)?:")) #(iii)
+squared_numbers[number]
+print(number * number)
+
