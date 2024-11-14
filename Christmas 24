@@ -1,0 +1,72 @@
+#Question 1
+#Name: Ronan Hallihan
+from random import choice
+
+fruits = ["apple", "cherry", "orange"]
+ 
+random_fruit_1 = choice(fruits)
+random_fruit_2 = choice(fruits) #(ii)
+random_fruit_3 = choice(fruits)
+print("Random Fruit 1: ", random_fruit_1) #(i)
+print("Random Fruit 2: ", random_fruit_2)
+print("Random Fruit 3: ", random_fruit_3)
+ 
+print("First fruit is: ", random_fruit_1) #(iii)
+if random_fruit_1 == random_fruit_2:
+    print("First pair match") #(iv)
+ 
+if (random_fruit_1 and random_fruit_2) == ("cherry"):
+    print("First pair are cherries") #(v)
+     
+if (random_fruit_1 == random_fruit_2):
+    print("Matching Pair")
+elif (random_fruit_2 == random_fruit_3):
+    print("Matching Pair")
+elif (random_fruit_1 == random_fruit_3):
+    print("Matching Pair") #(vi)
+     
+
+
+        
+attempts_apple = 0
+attempts_cherry =0
+attempts_orange = 0
+for i in range(1,100): 
+   fruit = ["apple", "cherry", "orange"]
+randomFruit1 = choice(fruit)
+randomFruit2 = choice(fruit)
+randomFruit3 = choice(fruit)
+print("\nRandom Fruit 1: ", randomFruit1) #vii)
+print("Random Fruit 2: ", randomFruit2)
+print("Random Fruit 3: ", randomFruit3)
+
+
+if (randomFruit1 == randomFruit2):
+    print("\nMatching Pair")
+elif (randomFruit2 == randomFruit3):
+    print("\nMatching Pair")
+elif (randomFruit1 == randomFruit3):
+    print("\nMatching Pair")
+        
+   
+if(randomFruit1 or randomFruit2 or randomFruit3) == ("apple"):
+        attemptsApple = attempts_apple +1
+if(randomFruit1 or randomFruit2 or randomFruit3) == ("cherry"):
+        attemptsCherry = attempts_cherry +1
+if(randomFruit1 or randomFruit2 or randomFruit3) == ("orange"):
+        attemptsOrange = attempts_orange +1
+        
+print("apple: ", attemptsApple)
+print("cherry: ", attemptsCherry)
+print("orange: ", attemptsOrange)
+
+
+
+#Question 2
+#Name : Ronan Hallihan
+
+print("Split Bill Calculator")
+bill_amount = float(input("How much is the bill? :"))
+people = int(input("How many people? : "))
+amount_owed = bill_amount/people
+print("You each owe: ", amount_owed)
